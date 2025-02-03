@@ -127,9 +127,45 @@ footer p {
 }
 
 /* Media Query for Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    /* For tablets and large mobile screens */
+    header {
+        padding: 100px 20px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
     .navbar-link {
         font-size: 16px;
+    }
+
+    .hair-icons {
+        font-size: 30px;
+    }
+
+    .box {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    header {
+        padding: 80px 20px;
     }
 
     header h1 {
@@ -138,5 +174,77 @@ footer p {
 
     header p {
         font-size: 18px;
+    }
+
+    .navbar-link {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    .hair-icons {
+        font-size: 28px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For smaller mobile screens */
+    body {
+        background: linear-gradient(to right, #f8cdda, #1e3c72); /* Ensure gradient fits on smaller screens */
+    }
+
+    header {
+        padding: 60px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-link {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .hair-icons {
+        font-size: 24px;
+        justify-content: space-around;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 }
