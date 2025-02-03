@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eiwa’s Aesthetics offers professional hair and skincare solutions, including keratin treatments, Botox, HydraFacial, and micro-needling.">
+    <title>Eiwa’s Aesthetics</title>
+    
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Adding a Google Font for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Adding Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Smooth Scroll JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="navbar-link">Home</a>
+            <a href="#about" class="navbar-link">About Us</a>
+            <a href="#hair-care" class="navbar-link">Hair Care</a>
+            <a href="#skin-care" class="navbar-link">Skin Care</a>
+            <a href="#commitment" class="navbar-link">Commitment</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="container">
+            <h1>Welcome to Eiwa’s Aesthetics</h1>
+            <p>Your trusted partner in professional hair and skin care solutions.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Us Section -->
+        <section id="about" class="intro">
+            <div class="container box">
+                <h2>About Us</h2>
+                <p>With over 15 years of expertise in the beauty and cosmetics industry, we have established ourselves as a trusted leader in professional hair care and advanced skin care solutions. Our commitment to quality and innovation drives us to develop premium products that cater to the evolving needs of beauty professionals and consumers alike.</p>
+            </div>
+        </section>
+
+        <!-- Hair Care Section -->
+        <section id="hair-care" class="hair-care">
+            <div class="container box">
+                <h2>Specialization in Hair Care</h2>
+                <p>Understanding the importance of healthy, beautiful hair, we specialize in high-performance treatments designed to restore and enhance hair health. Our professional keratin treatments are formulated to deliver exceptional smoothing and straightening results while repairing damaged hair. These treatments infuse essential proteins, vitamins, and nutrients, helping to strengthen hair strands, reduce frizz, and restore a naturally sleek, polished look.</p>
+                <p>In addition to keratin, we offer innovative hair Botox treatments, which deeply nourish and revitalize the hair by filling in damaged areas along the hair shaft. This helps restore elasticity, enhance shine, and improve overall texture, making hair look and feel healthier. Unlike traditional straightening treatments that may contain harsh chemicals, our keratin and Botox solutions are formaldehyde-free, ensuring a safer experience with no risk to health or exposure to toxic fumes.</p>
+                <div class="hair-icons">
+                    <i class="fas fa-cut"></i>
+                    <i class="fas fa-blow-dryer"></i>
+                    <i class="fas fa-scissors"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skin Care Section -->
+        <section id="skin-care" class="skin-care">
+            <div class="container box">
+                <h2>Advanced Skin Care Solutions</h2>
+                <p>Our passion for skin health is reflected in our carefully selected range of advanced skin care treatments. We proudly offer HydraFacial products, known for their ability to cleanse, exfoliate, and deeply hydrate the skin. These treatments are designed to enhance skin tone, texture, and overall radiance while being gentle and suitable for all skin types.</p>
+                <p>To complement our HydraFacial range, we provide professional-grade micro-needling products that promote skin rejuvenation by stimulating collagen production. This minimally invasive procedure is effective in addressing concerns such as fine lines, wrinkles, acne scars, and uneven skin texture, resulting in smoother, firmer, and more youthful-looking skin.</p>
+            </div>
+        </section>
+
+        <!-- Commitment to Excellence Section -->
+        <section id="commitment" class="commitment">
+            <div class="container box">
+                <h2>Commitment to Excellence & Safety</h2>
+                <p>At Eiwa’s Aesthetics, we believe that beauty should never come at the expense of health. That’s why we are dedicated to developing high-quality, effective, and safe products free from harmful chemicals. Our formulations prioritize hair and skin wellness, ensuring that every treatment not only enhances beauty but also nurtures and protects.</p>
+                <p>With a legacy of excellence and a vision for the future, we continue to innovate and bring the best in hair and skin care to our valued customers. Experience the transformative power of our specialized products, crafted with expertise, care, and a passion for beauty.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Eiwa’s Aesthetics | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Adding smooth scroll JS -->
+    <script>
+        // Smooth Scroll
+        $(document).ready(function() {
+            $(".navbar-link").on("click", function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $("html, body").animate({
+                        scrollTop: $(hash).offset().top - 60
+                    }, 800);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

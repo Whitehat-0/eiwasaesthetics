@@ -1,0 +1,142 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f8cdda, #1e3c72); /* Gradient background */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent dark background */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.navbar-link {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #ff7f50; /* Coral color on hover */
+    border-radius: 5px;
+}
+
+/* Header Section Styling */
+header {
+    background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover; /* Placeholder image */
+    text-align: center;
+    color: white;
+    padding: 120px 20px;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header p {
+    font-size: 22px;
+    color: #fffa;
+    font-weight: 300;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 32px;
+    color: #2e2e2e;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.box {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Hair Care Section */
+.hair-care {
+    background-color: #f5f5f5;
+}
+
+.hair-icons {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 36px;
+    margin-top: 20px;
+    color: #ff7f50;
+}
+
+.hair-icons i {
+    transition: transform 0.3s;
+}
+
+.hair-icons i:hover {
+    transform: scale(1.2);
+}
+
+/* Skin Care Section */
+.skin-care {
+    background-color: #eaeaea;
+}
+
+/* Commitment Section */
+.commitment {
+    background-color: #fff;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .navbar-link {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+}
